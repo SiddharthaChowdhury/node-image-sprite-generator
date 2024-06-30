@@ -129,5 +129,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-images/*
-sprite/*
+images/*.png
+sprite/*.webp
+sprite/*.css
