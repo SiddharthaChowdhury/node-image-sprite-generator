@@ -8,7 +8,8 @@ const imagesFolder = "./images"; // Change to your images folder
 
 // Output file
 const outputImage = "./sprite/sprite.webp";
-const outputJSON = "./sprite/sprite.json";
+// const outputJSON = "./sprite/sprite.json";
+const outputCSS = "./sprite/sprite.css";
 
 // Function to create image sprite
 const createImageSprite = async () => {
@@ -48,15 +49,19 @@ const createImageSprite = async () => {
 		});
 
 		let topOffset = 0;
-		const spriteData: {
-			[key: string]: { width: number; height: number; x: number; y: number };
-		} = {};
+		const cssRules: string[] = [];
+		// const spriteData: {
+		// 	[key: string]: { width: number; height: number; x: number; y: number };
+		// } = {};
 
 		// Collect composite operations
 		const compositeOperations = imagesMetadata.map(
 			({ file, width, height }) => {
 				const className = path.basename(file, path.extname(file));
-				spriteData[className] = { width, height, x: 0, y: topOffset };
+				cssRules.push(
+					`.${className} { width: ${width}px; height: ${height}px; background: url(${outputImage}) 0 -${topOffset}px; }`
+				);
+				// spriteData[className] = { width, height, x: 0, y: topOffset };
 				const operation = { input: file, top: topOffset, left: 0 };
 				topOffset += height;
 				return operation;
@@ -70,7 +75,9 @@ const createImageSprite = async () => {
 		await sprite.webp({ quality: 90 }).toFile(outputImage);
 
 		// Save the JS object as JSON
-		fs.writeFileSync(outputJSON, JSON.stringify(spriteData, null, 2));
+		// fs.writeFileSync(outputJSON, JSON.stringify(spriteData, null, 2));
+		// Save the CSS rules
+		fs.writeFileSync(outputCSS, cssRules.join("\n"));
 
 		console.log("WebP sprite image and JSON created successfully!");
 	} catch (error) {

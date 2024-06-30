@@ -1,0 +1,90 @@
+.rows {
+	width: 28px;
+	height: 28px;
+	background: url(./sprite/sprite.webp) 0 -0px;
+}
+.projects {
+	width: 28px;
+	height: 28px;
+	background: url(./sprite/sprite.webp) 0 -28px;
+}
+.priorityMedium_15 {
+	width: 15px;
+	height: 15px;
+	background: url(./sprite/sprite.webp) 0 -56px;
+}
+.priorityMedium {
+	width: 25px;
+	height: 25px;
+	background: url(./sprite/sprite.webp) 0 -71px;
+}
+.priorityLow_15 {
+	width: 15px;
+	height: 15px;
+	background: url(./sprite/sprite.webp) 0 -96px;
+}
+.priorityLowest_15 {
+	width: 15px;
+	height: 15px;
+	background: url(./sprite/sprite.webp) 0 -111px;
+}
+.priorityLowest {
+	width: 25px;
+	height: 25px;
+	background: url(./sprite/sprite.webp) 0 -126px;
+}
+.priorityLow {
+	width: 25px;
+	height: 25px;
+	background: url(./sprite/sprite.webp) 0 -151px;
+}
+.priorityHigh_15 {
+	width: 15px;
+	height: 15px;
+	background: url(./sprite/sprite.webp) 0 -176px;
+}
+.priorityHigh {
+	width: 25px;
+	height: 25px;
+	background: url(./sprite/sprite.webp) 0 -191px;
+}
+.priorityCritical_15 {
+	width: 15px;
+	height: 15px;
+	background: url(./sprite/sprite.webp) 0 -216px;
+}
+.priorityCritical {
+	width: 25px;
+	height: 25px;
+	background: url(./sprite/sprite.webp) 0 -231px;
+}
+.pieChart {
+	width: 28px;
+	height: 28px;
+	background: url(./sprite/sprite.webp) 0 -256px;
+}
+.people {
+	width: 28px;
+	height: 28px;
+	background: url(./sprite/sprite.webp) 0 -284px;
+}
+.home {
+	width: 28px;
+	height: 28px;
+	background: url(./sprite/sprite.webp) 0 -312px;
+}
+.cog {
+	width: 28px;
+	height: 28px;
+	background: url(./sprite/sprite.webp) 0 -340px;
+}
+.book {
+	width: 28px;
+	height: 28px;
+	background: url(./sprite/sprite.webp) 0 -368px;
+}
+.board {
+	width: 28px;
+	height: 28px;
+	background: url(./sprite/sprite.webp) 0 -396px;
+}

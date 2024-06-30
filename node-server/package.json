@@ -1,6 +1,6 @@
 {
 	"type": "module",
-	"name": "dersloka-backend",
+	"name": "node-server",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
